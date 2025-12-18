@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xinbo-li.github.io/sitemap.xml
