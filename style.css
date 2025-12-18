@@ -755,4 +755,55 @@ a:hover {
         flex: 1;
         min-width: 0;
     }
+
+    /* --- ADDED: Core Layout Responsiveness --- */
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 3rem 2rem 2rem 2rem;
+        /* Reduced top padding */
+    }
+
+    .content {
+        padding: 2rem;
+    }
+
+    /* Make nav links easier to tap / maybe grid layout for compact view */
+    .main-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+    }
+    
+    /* Make the CV link span full width or just sit with others? 
+       Let's leave it as grid 1fr 1fr, 5 items -> last 1 spans 2? */
+    .main-nav a:last-child {
+       grid-column: span 1; /* Or generic behavior */
+    }
+
+    .social-links {
+        padding-top: 1.5rem;
+        justify-content: center;
+    }
+    
+    /* Adjust Profile for mobile centering */
+    .sidebar h1, .role, .bio {
+        text-align: center;
+    }
+    
+    .role {
+        margin-bottom: 1.5rem;
+    }
+    
+    .sidebar h1 {
+        margin-top: 0;
+    }
 }
