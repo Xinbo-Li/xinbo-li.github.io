@@ -776,33 +776,83 @@ a:hover {
         padding: 2rem;
     }
 
-    /* Make nav links easier to tap / maybe grid layout for compact view */
+    /* --- REFINED: Clean Mobile Tabs (No Buttons) --- */
     .main-nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        /* More space between text items */
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+        /* Divider line below nav */
+
+        /* CENTERED alignments */
+        justify-content: center;
+        padding-left: 0;
+
+        /* Hide scrollbar */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
-    
-    /* Make the CV link span full width or just sit with others? 
-       Let's leave it as grid 1fr 1fr, 5 items -> last 1 spans 2? */
-    .main-nav a:last-child {
-       grid-column: span 1; /* Or generic behavior */
+
+    .main-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main-nav a {
+        flex: 0 0 auto;
+        padding: 0.5rem 0;
+        /* Vertical padding only */
+        font-size: 0.95rem;
+        background-color: transparent !important;
+        border: none !important;
+        /* Remove the box border */
+        box-shadow: none !important;
+        /* Remove the shadow */
+        color: var(--text-light);
+        font-weight: 500;
+        border-radius: 0;
+    }
+
+    /* Remove the hover lift effect on mobile to prevent weirdness */
+    .main-nav a:hover {
+        transform: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        color: var(--text-main);
+    }
+
+    /* Active State - Simple Bottom Border */
+    .main-nav a.active {
+        color: var(--accent);
+        font-weight: 700;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border-bottom: 2px solid var(--accent) !important;
+        transform: none !important;
     }
 
     .social-links {
-        padding-top: 1.5rem;
+        padding-top: 0;
+        /* Reduced padding since nav has margin */
         justify-content: center;
+        margin-bottom: 2rem;
     }
-    
+
     /* Adjust Profile for mobile centering */
-    .sidebar h1, .role, .bio {
+    .sidebar h1,
+    .role,
+    .bio {
         text-align: center;
     }
-    
+
     .role {
         margin-bottom: 1.5rem;
     }
-    
+
     .sidebar h1 {
         margin-top: 0;
     }
