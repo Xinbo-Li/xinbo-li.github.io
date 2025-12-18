@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xinbo Li | UT Austin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="profile-photo">
+                    <div class="placeholder-img"></div>
+                </div>
+
+                <div class="profile-info">
+                    <h1>Xinbo Li</h1>
+                    <p class="role">Undergraduate Student, UT Austin</p>
+                    <p class="bio">
+                        I am interested in <i>geometry</i>, specifically its intersection with <i>algebra</i>.
+                        <br>
+                        In particular, I like algebraic problems that have rich geometric structures and solving them
+                        using geometric insights.
+                    </p>
+
+                    <nav class="main-nav">
+                        <a href="research.html">Research</a>
+                        <a href="notes.html">Expository Notes</a>
+                        <a href="teaching.html">Teaching</a>
+                        <a href="cv.pdf">CV</a>
+                        <a href="index.html" class="active">Home</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="mailto:you@utexas.edu">Email</a>
+                <a href="https://github.com/yourusername">GitHub</a>
+                <a href="#">ArXiv</a>
+            </div>
+        </aside>
+
+        <main class="content">
+
+            <section id="recents">
+                <h2 class="section-heading">Recent Updates</h2>
+
+                <article class="paper-card">
+                    <div class="paper-meta">
+                        <span class="paper-date">Dec 2025</span>
+                        <span class="paper-tag">Preprint</span>
+                    </div>
+                    <h3 class="paper-title"><a href="research.html">Cohomology of Character Varieties</a></h3>
+                    <p class="paper-abstract">
+                        We investigate the Betti numbers of moduli spaces of rank $n$ Higgs bundles.
+                    </p>
+                </article>
+
+                <article class="paper-card note-card">
+                    <div class="paper-meta">
+                        <span class="paper-date">Nov 2025</span>
+                        <span class="paper-tag">Blog</span>
+                    </div>
+                    <h3 class="paper-title"><a href="notes.html">Understanding the Fourier-Mukai Transform</a></h3>
+                    <p class="paper-abstract">
+                        An intuitive explanation of the derived equivalence $D^b(X) \cong D^b(Y)$ for K3 surfaces.
+                    </p>
+                </article>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
