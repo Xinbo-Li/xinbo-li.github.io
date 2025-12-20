@@ -1,15 +1,23 @@
 const SITE_DATA = {
   research: [
-    // {
-    //     title: "Cohomology of Character Varieties",
-    //     date: "Dec 2025",
-    //     tag: "Preprint",
-    //     abstract: "We investigate the Betti numbers of moduli spaces of rank $n$ Higgs bundles. Specifically, the case where $\\Sigma$ is a Riemann surface of genus $g > 1$.",
-    //     links: [
-    //         { text: "PDF", url: "#" },
-    //         { text: "ArXiv", url: "#" }
-    //     ]
-    // }
+    {
+      title: "Finding Ellipses: Blaschke Products, Poncelet’s Theorem, and the Numerical Range",
+      date: "Summer 2025",
+      tag: "REU",
+      abstract: "During Polymath Jr. REU, our group explored the geometric properties of finite Blaschke products. Our work is accepted by the 2026 JMM and would be presented by Michael David Gambardella. ",
+      links: [
+        { text: "Details", url: "https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Paper/57312" },
+      ]
+    },
+    {
+      title: "\(\Psi S^3\): Pseudo-self-similar structures",
+      date: "Ongoing",
+      tag: "TXGL",
+      abstract: "We use SageMath to explore topological properties of aperiodic tilings. In particular, we are examining the square, chair, and the Penrose tilings. Currently, we are working on computing the cohomology groups for such tilings.",
+      links: [
+        { text: "Details", url: "https://texas-experimental-geometry-lab.gitlab.io/projects/2025-spring/self-similar/main.html" },
+      ]
+    }
   ],
   notes: [
     {
