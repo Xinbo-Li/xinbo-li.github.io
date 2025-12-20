@@ -10,7 +10,7 @@ const SITE_DATA = {
       ]
     },
     {
-      title: "\(\Psi S^3\): Pseudo-self-similar structures",
+      title: "\\(\\Psi S^3\\): Pseudo-self-similar structures",
       date: "Ongoing",
       tag: "TXGL",
       abstract: "We use SageMath to explore topological properties of aperiodic tilings. In particular, we are examining the square, chair, and the Penrose tilings. Currently, we are working on computing the cohomology groups for such tilings.",
