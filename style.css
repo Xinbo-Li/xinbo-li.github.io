@@ -426,6 +426,18 @@ a:hover {
     border-color: #90cdf4 !important;
 }
 
+/* Details Button - Teal Theme */
+.btn-details {
+    color: #2c7a7b !important; /* Teal 700 */
+    background-color: #e6fffa !important; /* Teal 50 */
+    border-color: #b2f5ea !important; /* Teal 200 */
+}
+
+.btn-details:hover {
+    background-color: #b2f5ea !important; /* Teal 100 */
+    border-color: #4fd1c5 !important; /* Teal 300 */
+}
+
 
 /* --- REFINED ICONS (Outlined) --- */
 .link-icon {
